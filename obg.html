@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscrição recebida · Imersão Atom 2026</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description"
+    content="Recebemos sua inscrição na Imersão Atom 2026. Fale com a equipe pelo WhatsApp para confirmar sua vaga em Sorocaba.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+      var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NN47X5SM');</script>
+  <!-- End Google Tag Manager -->
+
+  <style>
+    :root {
+      --paper: #F7F5F0;
+      --paper-2: #FFFFFF;
+      --paper-3: #EDE9E1;
+      --night: #131519;
+      --night-2: #1B1E24;
+
+      --ink: #14161B;
+      --ink-2: #3E424B;
+      --ink-3: #71757E;
+      --line: rgba(20, 22, 27, 0.14);
+      --line-soft: rgba(20, 22, 27, 0.08);
+
+      --gold: #A97A08;
+      --gold-2: #C9930A;
+      --gold-bright: #FFBE00;
+
+      --wpp: #128C4A;
+      --wpp-soft: rgba(18, 140, 74, 0.08);
+
+      --sans: 'DM Sans', -apple-system, system-ui, 'Segoe UI', Arial, sans-serif;
+      --pad: 40px;
+    }
+
+    .night {
+      --ink: #FBF9F4;
+      --ink-2: rgba(243, 240, 232, 0.74);
+      --ink-3: rgba(243, 240, 232, 0.5);
+      --line: rgba(243, 240, 232, 0.2);
+      --line-soft: rgba(243, 240, 232, 0.11);
+      --gold: var(--gold-bright);
+      --gold-2: var(--gold-bright);
+      background: var(--night);
+      color: var(--ink);
+    }
+
+    .band {
+      background: var(--paper-3);
+    }
+
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ::selection {
+      background: var(--gold-bright);
+      color: #14161B;
+    }
+
+    .wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 var(--pad);
+    }
+
+    /* ── masthead ── */
+    .masthead {
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .masthead__in {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      height: 66px;
+    }
+
+    .masthead img {
+      height: 25px;
+      width: auto;
+    }
+
+    .selo {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--wpp);
+      background: var(--wpp-soft);
+      border: 1px solid rgba(18, 140, 74, 0.26);
+      padding: 7px 14px;
+      border-radius: 2px;
+    }
+
+    .selo svg {
+      width: 12px;
+      height: 12px;
+    }
+
+    /* ── tipografia ── */
+    .kicker {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .kicker::before {
+      content: '';
+      width: 28px;
+      height: 1px;
+      background: var(--gold-2);
+      flex-shrink: 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .d1 {
+      font-size: clamp(36px, 5.2vw, 68px);
+      line-height: 1.0;
+      letter-spacing: -0.045em;
+    }
+
+    .d2 {
+      font-size: clamp(27px, 3.4vw, 44px);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    .acc {
+      color: var(--gold);
+    }
+
+    .lead {
+      font-size: clamp(16.5px, 1.4vw, 19px);
+      line-height: 1.6;
+      color: var(--ink-2);
+      max-width: 46ch;
+    }
+
+    .lead strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* ── grade ── */
+    .principal {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 340px;
+      gap: 72px;
+      align-items: start;
+      padding: 68px 0 86px;
+    }
+
+    /* ── cartão whatsapp ── */
+    .wpp-card {
+      background: var(--paper-2);
+      border: 1px solid var(--line);
+      border-radius: 2px;
+      padding: 30px 30px 28px;
+      margin-top: 36px;
+      box-shadow: 0 1px 2px rgba(20, 22, 27, 0.04), 0 22px 46px -32px rgba(20, 22, 27, 0.35);
+      position: relative;
+    }
+
+    .wpp-card::before {
+      content: '';
+      position: absolute;
+      inset: -1px -1px auto -1px;
+      height: 3px;
+      background: var(--wpp);
+    }
+
+    .wpp-card h2 {
+      font-size: clamp(23px, 2.3vw, 29px);
+      line-height: 1.12;
+      letter-spacing: -0.035em;
+      margin: 14px 0 10px;
+    }
+
+    .wpp-card > p {
+      font-size: 14.5px;
+      line-height: 1.6;
+      color: var(--ink-2);
+      margin-bottom: 24px;
+      max-width: 46ch;
+    }
+
+    .btn-wpp {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 11px;
+      background: var(--wpp);
+      border: 1px solid var(--wpp);
+      color: #FFFFFF;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 17px 30px;
+      min-height: 46px;
+      border-radius: 2px;
+      transition: background .2s ease, border-color .2s ease, color .2s ease;
+    }
+
+    .btn-wpp:hover {
+      background: #14161B;
+      border-color: #14161B;
+      color: var(--paper);
+    }
+
+    .btn-wpp svg {
+      width: 19px;
+      height: 19px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+
+    .wpp-card__nota {
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line-soft);
+      font-size: 12.5px;
+      line-height: 1.6;
+      color: var(--ink-3);
+    }
+
+    .wpp-card__nota b {
+      color: var(--ink-2);
+      font-weight: 600;
+    }
+
+    /* ── passos ── */
+    .passos {
+      margin-top: 54px;
+    }
+
+    .passos ol {
+      list-style: none;
+      border-top: 1px solid var(--line);
+      margin-top: 20px;
+    }
+
+    .passos li {
+      display: grid;
+      grid-template-columns: 54px 1fr;
+      gap: 18px;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .passos .n {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      color: var(--gold);
+      padding-top: 5px;
+    }
+
+    .passos h3 {
+      font-size: 19px;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin-bottom: 5px;
+    }
+
+    .passos p {
+      font-size: 14.5px;
+      line-height: 1.6;
+      color: var(--ink-2);
+      max-width: 54ch;
+    }
+
+    /* ── coluna lateral ── */
+    .lateral {
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+      position: sticky;
+      top: 28px;
+    }
+
+    .video-card {
+      border: 1px solid var(--line);
+      border-radius: 2px;
+      overflow: hidden;
+      background: var(--paper-2);
+    }
+
+    .video-card video {
+      width: 100%;
+      aspect-ratio: 9 / 16;
+      display: block;
+      background: #000;
+      object-fit: cover;
+    }
+
+    .video-card figcaption {
+      padding: 16px 18px 18px;
+      border-top: 1px solid var(--line-soft);
+    }
+
+    .video-card figcaption strong {
+      display: block;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 4px;
+    }
+
+    .video-card figcaption span {
+      font-size: 13px;
+      line-height: 1.55;
+      color: var(--ink-3);
+    }
+
+    .ficha {
+      border-top: 1px solid var(--line);
+    }
+
+    .ficha div {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      padding: 13px 0;
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .ficha dt {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+    }
+
+    .ficha dd {
+      font-size: 14.5px;
+      font-weight: 600;
+      text-align: right;
+      line-height: 1.3;
+    }
+
+    /* ── primeira edição (dobra escura) ── */
+    .edicao {
+      padding: 88px 0;
+    }
+
+    .edicao__in {
+      display: grid;
+      grid-template-columns: 330px minmax(0, 1fr);
+      gap: 64px;
+      align-items: center;
+    }
+
+    .edicao figure {
+      border: 1px solid var(--line);
+      border-radius: 2px;
+      overflow: hidden;
+      background: #000;
+      aspect-ratio: 9 / 16;
+    }
+
+    .edicao vturb-smartplayer {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .edicao .d2 {
+      margin: 20px 0 18px;
+    }
+
+    /* ── fechamento ── */
+    .fechamento__in {
+      display: grid;
+      grid-template-columns: 320px minmax(0, 1fr);
+      gap: 56px;
+      align-items: center;
+      padding: 84px 0;
+    }
+
+    .fechamento figure {
+      border: 1px solid var(--line);
+      border-radius: 2px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .fechamento figure img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+      object-position: 12% 20%;
+    }
+
+    .fechamento figcaption {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 12px 16px;
+      background: rgba(19, 21, 25, 0.8);
+      color: #F3F0E8;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .fechamento p.body {
+      font-size: 16px;
+      line-height: 1.65;
+      color: var(--ink-2);
+      max-width: 50ch;
+      margin: 18px 0 30px;
+    }
+
+    /* ── rodapé ── */
+    .rodape {
+      padding: 40px 0;
+      font-size: 13px;
+      color: var(--ink-2);
+    }
+
+    .rodape__in {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .rodape a:hover {
+      color: var(--gold-bright);
+    }
+
+    /* ── movimento: revelação no scroll ── */
+    @media (prefers-reduced-motion: no-preference) {
+      .anim [data-rev],
+      .anim [data-rev-fila] > * {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity .8s cubic-bezier(.2, .7, .2, 1), transform .8s cubic-bezier(.2, .7, .2, 1);
+        transition-delay: var(--d, 0ms);
+      }
+
+      .anim [data-rev].vis,
+      .anim [data-rev-fila].vis > * {
+        opacity: 1;
+        transform: none;
+      }
+
+      .anim [data-rev-fila] > *:nth-child(1) { transition-delay: 0ms; }
+      .anim [data-rev-fila] > *:nth-child(2) { transition-delay: 90ms; }
+      .anim [data-rev-fila] > *:nth-child(3) { transition-delay: 180ms; }
+      .anim [data-rev-fila] > *:nth-child(n+4) { transition-delay: 260ms; }
+
+      .anim .kicker::before {
+        width: 0;
+        transition: width .7s cubic-bezier(.2, .7, .2, 1) .12s;
+      }
+
+      .anim [data-rev].vis .kicker::before,
+      .anim .kicker[data-rev].vis::before,
+      .anim [data-rev-fila].vis .kicker::before {
+        width: 28px;
+      }
+    }
+
+    /* ── responsivo ── */
+    @media (max-width: 1000px) {
+      :root {
+        --pad: 30px;
+      }
+
+      .principal,
+      .edicao__in,
+      .fechamento__in {
+        grid-template-columns: 1fr;
+        gap: 44px;
+      }
+
+      .principal {
+        padding: 46px 0 58px;
+      }
+
+      .edicao {
+        padding: 62px 0;
+      }
+
+      .fechamento__in {
+        padding: 60px 0;
+      }
+
+      .lateral {
+        position: static;
+        max-width: 340px;
+        width: 100%;
+      }
+
+      .edicao figure,
+      .fechamento figure {
+        max-width: 330px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      :root {
+        --pad: 22px;
+      }
+
+      /* título quebra em três linhas no celular: sem folga o ç encosta na linha de baixo */
+      .d1 {
+        line-height: 1.06;
+      }
+
+      .masthead__in {
+        height: 60px;
+      }
+
+      .masthead img {
+        height: 22px;
+      }
+
+      .selo {
+        font-size: 9px;
+        letter-spacing: 0.14em;
+        padding: 6px 10px;
+      }
+
+      .wpp-card {
+        padding: 26px 22px 24px;
+      }
+
+      .btn-wpp {
+        width: 100%;
+        font-size: 12.5px;
+        letter-spacing: 0.06em;
+        padding: 16px 18px;
+      }
+
+      .lateral,
+      .edicao figure,
+      .fechamento figure {
+        max-width: none;
+      }
+
+      .passos li {
+        grid-template-columns: 36px 1fr;
+        gap: 12px;
+      }
+
+      .rodape__in {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        transition: none !important;
+      }
+    }
+  </style>
+
+  <script>document.documentElement.className += ' anim';</script>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NN47X5SM" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+
+  <header class="masthead">
+    <div class="wrap masthead__in">
+      <img src="midia/logo-atom.png" alt="Atom Educacional" width="145" height="25">
+      <span class="selo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"
+          stroke-linejoin="round" aria-hidden="true">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+        Inscrição recebida
+      </span>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap principal">
+      <div>
+        <p class="kicker" data-rev>Último passo</p>
+
+        <h1 class="d1" style="margin:22px 0 22px" data-rev>Obrigado pela inscrição.<br>Falta confirmar a <span
+            class="acc">vaga</span>.</h1>
+
+        <p class="lead" data-rev style="--d:90ms">Recebemos seus dados e ficamos felizes por você querer estar na
+          sala em agosto. A confirmação é feita pessoa por pessoa, pelo WhatsApp:
+          <strong>chame a nossa equipe agora</strong> para reservar seu lugar nos dias 14, 15 e 16 de agosto.
+        </p>
+
+        <section class="wpp-card" data-rev style="--d:150ms">
+          <p class="kicker">Confirmação</p>
+          <h2>Chame a equipe da Atom no WhatsApp</h2>
+          <p>Em poucos minutos a equipe confirma sua vaga e passa as condições de participação.</p>
+
+          <a class="btn-wpp"
+            href="https://wa.me/551530316100?text=Oi!%20Acabei%20de%20me%20inscrever%20na%20Imers%C3%A3o%20Presencial%20da%20Atom%20(14%2C%2015%20e%2016%20de%20agosto%2C%20em%20Sorocaba)%20e%20quero%20confirmar%20minha%20vaga."
+            target="_blank" rel="noopener" data-wpp="topo">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.73 2.65 4.2 3.71.59.25 1.04.4 1.4.52.59.19 1.12.16 1.55.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.22-.17-.47-.29Z" />
+            </svg>
+            Chamar no WhatsApp
+          </a>
+
+          <p class="wpp-card__nota">Atendimento em horário comercial pelo <b>(15) 3031-6100</b>. Fora dele, a
+            resposta vem no próximo dia útil.</p>
+        </section>
+
+        <section class="passos">
+          <p class="kicker" data-rev>Como funciona daqui pra frente</p>
+          <ol data-rev-fila>
+            <li>
+              <span class="n">01</span>
+              <div>
+                <h3>Você chama no WhatsApp</h3>
+                <p>É por lá que a vaga é confirmada. Quanto antes, maior a chance de pegar lugar no lote atual.</p>
+              </div>
+            </li>
+            <li>
+              <span class="n">02</span>
+              <div>
+                <h3>A equipe confere seus dados</h3>
+                <p>Conferimos os dados que você acabou de enviar e reservamos seu nome na lista.</p>
+              </div>
+            </li>
+            <li>
+              <span class="n">03</span>
+              <div>
+                <h3>Você recebe o endereço e a programação</h3>
+                <p>Dias antes do evento chegam o endereço exato em Sorocaba, os horários e o que levar.</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+      </div>
+
+      <aside class="lateral" data-rev style="--d:120ms">
+        <figure class="video-card">
+          <video controls playsinline preload="none" poster="midia/kim-imersao-explicacao-poster.jpg">
+            <source src="midia/kim-imersao-explicacao.mp4" type="video/mp4">
+            Seu navegador não reproduz este vídeo.
+          </video>
+          <figcaption>
+            <strong>Um recado do Kim Paiffer</strong>
+            <span>Assista enquanto a conversa no WhatsApp não começa.</span>
+          </figcaption>
+        </figure>
+
+        <dl class="ficha">
+          <div>
+            <dt>Data</dt>
+            <dd>14 a 16 de agosto</dd>
+          </div>
+          <div>
+            <dt>Local</dt>
+            <dd>Sorocaba, SP</dd>
+          </div>
+          <div>
+            <dt>Formato</dt>
+            <dd>Presencial, 3 dias</dd>
+          </div>
+          <div>
+            <dt>Edição</dt>
+            <dd>2ª edição</dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+
+    <!-- ═══ PRIMEIRA EDIÇÃO ═══ -->
+    <section class="edicao night">
+      <div class="wrap edicao__in">
+        <figure data-rev>
+          <vturb-smartplayer id="vid-6a1f3df3c2771546fc15614a"></vturb-smartplayer>
+        </figure>
+
+        <div data-rev style="--d:90ms">
+          <p class="kicker">Primeira edição</p>
+          <h2 class="d2">Como foram os três dias<br>da <span class="acc">edição anterior</span></h2>
+          <p class="lead">Sala cheia, operações rodando e o clima dos intervalos. É esse formato que se repete em
+            agosto, com mais mentores.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band fechamento">
+      <div class="wrap fechamento__in">
+        <figure data-rev>
+          <img src="midia/kim-conversivel.jpg" alt="Kim Paiffer" width="730" height="580" loading="lazy">
+          <figcaption>Kim Paiffer</figcaption>
+        </figure>
+
+        <div data-rev style="--d:90ms">
+          <p class="kicker">A imersão</p>
+          <h2 class="d2" style="margin:20px 0 0">Três dias na mesma sala<br>de <span class="acc">quem opera todo
+              dia</span></h2>
+
+          <p class="body">Investimentos, trading ao vivo, criptomoedas e networking com os mentores. Espaço privativo
+            e turma reduzida, para caber conversa de verdade, não plateia.</p>
+
+          <a class="btn-wpp"
+            href="https://wa.me/551530316100?text=Oi!%20Acabei%20de%20me%20inscrever%20na%20Imers%C3%A3o%20Presencial%20da%20Atom%20(14%2C%2015%20e%2016%20de%20agosto%2C%20em%20Sorocaba)%20e%20quero%20confirmar%20minha%20vaga."
+            target="_blank" rel="noopener" data-wpp="rodape">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.73 2.65 4.2 3.71.59.25 1.04.4 1.4.52.59.19 1.12.16 1.55.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.22-.17-.47-.29Z" />
+            </svg>
+            Confirmar minha vaga
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape night">
+    <div class="wrap rodape__in">
+      <span>Atom Educacional · Sorocaba, SP</span>
+      <a href="https://atomeducacional.com.br" target="_blank" rel="noopener">atomeducacional.com.br</a>
+    </div>
+  </footer>
+
+  <script>
+    // Revelação no scroll
+    (function () {
+      var alvos = document.querySelectorAll('[data-rev], [data-rev-fila]');
+      if (!alvos.length) return;
+      var reduz = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      function mostrar(el) { el.classList.add('vis'); }
+
+      if (reduz || !('IntersectionObserver' in window)) {
+        Array.prototype.forEach.call(alvos, mostrar);
+        return;
+      }
+
+      var obs = new IntersectionObserver(function (entradas) {
+        entradas.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          mostrar(e.target);
+          obs.unobserve(e.target);
+        });
+        // a margem gigante no topo garante que nada fique invisível se o leitor pular a seção
+      }, { threshold: 0, rootMargin: '9999px 0px -9% 0px' });
+
+      Array.prototype.forEach.call(alvos, function (el) { obs.observe(el); });
+    })();
+
+    // Marca o clique no WhatsApp no dataLayer (GTM)
+    document.querySelectorAll('[data-wpp]').forEach(function (el) {
+      el.addEventListener('click', function () {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: 'clique_whatsapp', posicao: el.dataset.wpp, pagina: 'obrigado' });
+      });
+    });
+  </script>
+
+  <!-- player da primeira edição -->
+  <script type="text/javascript">
+    (function () {
+      var s = document.createElement("script");
+      s.src = "https://scripts.converteai.net/7452d964-17c9-442e-bd91-d5d6e5504874/players/6a1f3df3c2771546fc15614a/v4/player.js";
+      s.async = true;
+      document.head.appendChild(s);
+    })();
+  </script>
+</body>
+
+</html>

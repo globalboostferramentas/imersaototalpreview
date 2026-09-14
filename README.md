@@ -38,7 +38,7 @@ Faça backup da página publicada antes de substituir.
 | --- | --- | --- |
 | Google Tag Manager | as duas páginas | `GTM-52S3HK7Q` |
 | Formulário HubSpot | `index.html`, dois pontos de captura | portal `48226823`, form `56f6f3da-7196-45a6-9571-773f3d03ef22` |
-| WhatsApp | `obg.html` | variável `WHATSAPP` no script do fim da página (a definir) |
+| WhatsApp | `obg.html`, nos dois botões | `api.whatsapp.com/send/?phone=5515996464968` com mensagem pronta |
 
 No HubSpot, o formulário redireciona para um checkout. O `index.html` passa por cima disso
 no embed (`redirectUrl` e `onFormSubmitted`) e manda para o `obg.html` da mesma pasta,

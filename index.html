@@ -1043,18 +1043,22 @@
       margin-top: 48px;
     }
 
+    /* a moldura corta o zoom para a foto não invadir o texto */
+    .mentor__foto {
+      overflow: hidden;
+      border-radius: 2px;
+      background: var(--paper-3);
+    }
+
     .mentor img {
       width: 100%;
       aspect-ratio: 4 / 5;
       object-fit: cover;
-      border-radius: 2px;
-      filter: grayscale(100%) contrast(1.04);
-      transition: filter .35s ease;
-      background: var(--paper-3);
+      transition: transform .6s cubic-bezier(.2, .7, .2, 1);
     }
 
     .mentor:hover img {
-      filter: grayscale(0%);
+      transform: scale(1.05);
     }
 
     .mentor__papel {
@@ -1741,10 +1745,10 @@
     }
 
     /* ── aviso legal no rodapé ── */
+    /* a linha de cima já vem da borda do .rodape__top */
     .legal {
-      margin-top: 30px;
-      padding-top: 26px;
-      border-top: 1px solid var(--line-soft);
+      padding-top: 32px;
+      text-align: center;
     }
 
     .legal p {
@@ -1752,6 +1756,7 @@
       line-height: 1.7;
       color: var(--ink-3);
       max-width: 110ch;
+      margin-inline: auto;
     }
 
     .legal p + p {
@@ -2236,7 +2241,6 @@
           <div class="nao">
             <h3 data-rev>Para quem não é</h3>
             <ul data-rev-fila>
-              <li>Já opera na bolsa e busca estratégias avançadas</li>
               <li>Procura consultoria financeira personalizada</li>
               <li>Espera garantia de resultado financeiro</li>
               <li>Quer uma formação completa de trader em um dia</li>
@@ -2377,8 +2381,10 @@
 
         <div class="conduzem" data-rev-fila>
           <article class="mentor">
-            <img src="https://lp.atomeducacional.com.br/wp-content/uploads/2026/athus/avatares-mentores/kim.webp"
-              alt="Retrato de Joaquim Paiffer" width="400" height="500" loading="lazy">
+            <div class="mentor__foto">
+              <img src="https://lp.atomeducacional.com.br/wp-content/uploads/2026/athus/avatares-mentores/kim.webp"
+                alt="Retrato de Joaquim Paiffer" width="400" height="500" loading="lazy">
+            </div>
             <span class="mentor__papel">Tarde · trading</span>
             <h3>Joaquim Paiffer</h3>
             <p>Executivo e trader, quase 20 anos de mercado. Cofundador da Atom, da Tuchê Asset Management e da Atom
@@ -2387,8 +2393,10 @@
           </article>
 
           <article class="mentor">
-            <img src="https://lp.atomeducacional.com.br/wp-content/uploads/2026/athus/avatares-mentores/danilo.webp"
-              alt="Retrato de Danilo Cisotto" width="400" height="500" loading="lazy">
+            <div class="mentor__foto">
+              <img src="https://lp.atomeducacional.com.br/wp-content/uploads/2026/athus/avatares-mentores/danilo.webp"
+                alt="Retrato de Danilo Cisotto" width="400" height="500" loading="lazy">
+            </div>
             <span class="mentor__papel">Manhã · organização</span>
             <h3>Danilo Cisotto</h3>
             <p>CFO da Atom e do Cebrac. Mais de 20 anos administrando finanças, estratégia e patrimônio dentro de
@@ -2396,8 +2404,10 @@
           </article>
 
           <article class="mentor">
-            <img src="https://lp.atomeducacional.com.br/wp-content/uploads/2026/athus/avatares-mentores/lucas.webp"
-              alt="Retrato de Lucas Ramos" width="400" height="500" loading="lazy">
+            <div class="mentor__foto">
+              <img src="https://lp.atomeducacional.com.br/wp-content/uploads/2026/athus/avatares-mentores/lucas.webp"
+                alt="Retrato de Lucas Ramos" width="400" height="500" loading="lazy">
+            </div>
             <span class="mentor__papel">Manhã · números</span>
             <h3>Lucas Ramos</h3>
             <p>COO da Atom e empresário. Há mais de 10 anos no mercado financeiro, educação e turismo. Traduz economia

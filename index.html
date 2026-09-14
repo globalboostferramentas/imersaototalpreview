@@ -2661,6 +2661,8 @@
         { target: '#hs-topo', pos: 'topo' },
         { target: '#hs-final', pos: 'final' }
       ];
+      // o formulário no HubSpot redireciona para um checkout; aqui o destino é trocado pela página de agradecimento
+      var obrigado = new URL('obg.html', window.location.href).href + window.location.search;
       function montar() {
         if (!window.hbspt) { return setTimeout(montar, 150); }
         alvos.forEach(function (a) {
@@ -2669,9 +2671,13 @@
             formId: '56f6f3da-7196-45a6-9571-773f3d03ef22',
             region: 'na1',
             target: a.target,
+            redirectUrl: obrigado,
             onFormSubmit: function () {
               window.dataLayer = window.dataLayer || [];
               window.dataLayer.push({ event: 'envio_formulario', posicao: a.pos });
+            },
+            onFormSubmitted: function () {
+              window.location.href = obrigado;
             }
           });
         });

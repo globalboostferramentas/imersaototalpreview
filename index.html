@@ -2682,6 +2682,8 @@
             region: 'na1',
             target: a.target,
             redirectUrl: obrigado,
+            // impede o embed de seguir a URL devolvida pelo HubSpot (o checkout); o destino fica com o onFormSubmitted
+            __INTERNAL__CONTEXT: { disableRedirect: true },
             onFormSubmit: function () {
               window.dataLayer = window.dataLayer || [];
               window.dataLayer.push({ event: 'envio_formulario', posicao: a.pos });

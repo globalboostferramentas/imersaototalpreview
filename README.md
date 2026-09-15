@@ -41,8 +41,11 @@ Faça backup da página publicada antes de substituir.
 | WhatsApp | `obg.html`, nos dois botões | `api.whatsapp.com/send/?phone=5515996464968` com mensagem pronta |
 
 No HubSpot, o formulário redireciona para um checkout. O `index.html` passa por cima disso
-no embed (`redirectUrl` e `onFormSubmitted`) e manda para o `obg.html` da mesma pasta,
-repetindo os parâmetros da URL (UTMs). O certo é também trocar o redirecionamento dentro
+no embed e manda para o `obg.html` da mesma pasta, repetindo os parâmetros da URL (UTMs):
+`redirectUrl` pede ao HubSpot o novo destino, `__INTERNAL__CONTEXT.disableRedirect` impede o
+embed de seguir a URL que o servidor devolver e `onFormSubmitted` faz a navegação. Essa flag
+é interna do embed e não está documentada; se um dia o envio voltar a cair no checkout, é
+por aqui que se começa a olhar. O certo é também trocar o redirecionamento dentro
 do HubSpot para `/workshop-despertar-financeiro/obg.html`, porque qualquer outra página
 que use esse formulário continua caindo no checkout.
 
